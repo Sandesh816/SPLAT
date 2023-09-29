@@ -1,2 +1,4 @@
 # SPLAT
-Spex Prism Library Analysis Toolkit (SPLAT) is a program engineered for binary classification of Brown Dwarfs. The program encompasses the use of Chi Square Statistics and Hypothesis Testing. For more information, please look over the ReadMe.
+Spex Prism Library Analysis Toolkit (SPLAT) is a program engineered for binary classification of Brown Dwarfs. First, the program import 1800 spectral objects data from the SPLAT's existing library. Then. using make_spl_singles.py, spectrum objects are made using the data. 
+Using the single spectrum objects, ~800,000 binary objects are made using the binary combination of each of the 1800 objects with each other. Then, each of the combination data is stored, along with its wavelength, flux, Spectral Type, and error information. Then, our program measures the Chi Square value for all the single and binary templates made. Then, top 5 closest spectrums are selected and they are graphically compared against the original spectrum object.
+Based on the graphical comparison, using Hypothesis testing, we determine whether the given original spectrum is a Single Brown Dwarf or a Binary Brown Dwarf.
